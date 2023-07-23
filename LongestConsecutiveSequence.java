@@ -48,7 +48,7 @@ public class LongestConsecutiveSequence {
         for(int i:a){
             s.add(i);
         }
-        int longstraek=0;
+        int longstreak=0;
         for(int i=0;i<n;i++){
             if(!s.contains(a[i]-1)){
                 int current=a[i];
@@ -57,11 +57,11 @@ public class LongestConsecutiveSequence {
                 curstreak+=1;
                 current=current+1;
             }
-            longstraek=Math.max(curstreak,longstraek);
+            longstreak=Math.max(curstreak,longstreak);
 
             }
         }
-        return  longstraek;
+        return  longstreak;
     }
 
     public static void main(String[] args) {
